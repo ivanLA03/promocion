@@ -2,7 +2,6 @@ import questions from "./preguntas.js";
 
 const questionDOM = document.querySelector(".question"),
     resetButton = document.querySelector(".reset"),
-    backButton = document.querySelector(".back"),
     [option1,option2,option3,option4] = document.querySelectorAll(".options"),
     options = [option1, option2, option3, option4]
 
@@ -74,11 +73,7 @@ function reset(){
     main()
 }
 
-const back = () => window.location.href = "../index.html"
-
 options.forEach(option => option.addEventListener("click", () => checkAnswers(option)))
-
-backButton.addEventListener("click", back)
 resetButton.addEventListener("click", reset)
 
 main()
