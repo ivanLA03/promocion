@@ -54,6 +54,9 @@
   .container .options:hover {
     background-color: rgb(170, 170, 170);
   }
+  .container .options:focus {
+    background-color: white;
+  }
   .container .button {
     display: block;
     margin: 0 auto;
@@ -70,4 +73,7 @@
 
   .reset:hover{
     background-color: #999;
+  }
+  .reset:focus{
+    background-color: white;
   }
